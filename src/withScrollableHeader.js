@@ -23,7 +23,7 @@ export default function withScrollableHeader(customOptions) {
 
 			height = this.clamp.interpolate({
 			        inputRange: [ 0, scrolledHeight ],
-			        outputRange: [ customOptions.maxHeight, minHeight ],
+			        outputRange: [ maxHeight, minHeight ],
 			    })
 
 			progress = this.clamp.interpolate({
