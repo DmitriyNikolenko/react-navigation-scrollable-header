@@ -1,3 +1,3 @@
-export default function getHeaderHeight(navigation) {
-	return navigation.state?.params?.scrolledHeader?.height
+export default function getHeaderHeight(navigation, initialHeight) {
+	return navigation.state?.params?.scrolledHeader?.height || initialHeight
 }
